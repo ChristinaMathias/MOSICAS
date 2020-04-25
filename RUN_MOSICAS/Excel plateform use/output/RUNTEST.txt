@@ -1,0 +1,39 @@
+ RAPPORT DE SIMULATION
+ version:    VERSION mosicas-2017.05.29 (J.F. MARTINE)         
+ fichier        RUNTEST
+ irotation:             0
+ bilanh:     MOSICASCERESb       
+  fréquence:       200000
+ iobs:                  1
+ iwatbal:               1
+ typeparam:             0
+ typecalage:            1
+ forcage 1:             0
+ forcage 2:             0
+ irrigation:            1
+  
+ ****************************************
+ Traitement :   BCSU-0-0-IRR-R570             
+ ****************************************
+ Bg plantes /mlin              9
+ Cycle                         0
+ Variété            R570           
+ Ecartement            1.400000    
+ Date début         29/10/2004
+ Date fin           27/09/2005
+ Altitude              100.0000    
+ Latitude             -21.00000    
+ Longitude             55.00000    
+ Nom Sol            CTC04               
+ Sol Initial          0.9500000    
+ Prof. racinaire       100.0000    
+ Nom Irrigation     CSU-0                    
+ Options meteo      0_1;0_100;0;0_100;0;0;0;0;0_0;0;0                           
+ Meteo 1            WS201               
+ solcouch.txt lu
+ Calcul stocks
+ irrigations           53
+ Fertilisations N            0
+ observ. sol :            0
+ Lecture plante.txt effectuee
+ nage=         334         699

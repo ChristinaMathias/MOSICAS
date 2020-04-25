@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1587808333046.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1672430828",
+    "id" : "54FE940B",
+    "lastKnownWriteTime" : 1587809806,
+    "last_content_update" : 1587809806902,
+    "path" : "C:/Users/mathi/OneDrive/Articles/MOSICAS/dataset/GITHUB/RUN_MOSICAS/R_run_MOSICAS/SCRIPT/R_Run_Mosicas.R",
+    "project_path" : "SCRIPT/R_Run_Mosicas.R",
+    "properties" : {
+        "cursorPosition" : "10,1",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

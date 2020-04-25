@@ -1,0 +1,2 @@
+wstacode	wsalt	wslat	wslong	TAV	AMP	countrycode	wstype	wsname
+WS201	566	-22.7	-47.55	25	5	BR	M	BR meteo CTC

@@ -1,0 +1,2 @@
+soilcode	soiltype	nblayer	p0	ru	soildepth
+CTC04	latosol	6	1	1	100

@@ -1,0 +1,2 @@
+nbbgi	treatcode	cycle	varcode	rowspace	begdate	enddate	trialat	trialong	trialalt	soilcode	inisoilvol	rootdepth	irricode	wstacode
+9	BCSU-0-0-IRR-R570	0	R570	1.4	29-10-2004	27-09-2005	-21	55	100	CTC04	0.95	100	CSU-0	WS201

@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1587732816637.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3342203540",
+    "id" : "759569D9",
+    "lastKnownWriteTime" : 1587809050,
+    "last_content_update" : 1587809050942,
+    "path" : "C:/Users/mathi/OneDrive/Articles/MOSICAS/dataset/GITHUB/Input_from_ECOFI_database/MOSICAS/R_ECOFI_to_MOSICAS/SCRIPT/R_function_mosicas_input.R",
+    "project_path" : "SCRIPT/R_function_mosicas_input.R",
+    "properties" : {
+        "cursorPosition" : "277,0",
+        "scrollLine" : "263"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

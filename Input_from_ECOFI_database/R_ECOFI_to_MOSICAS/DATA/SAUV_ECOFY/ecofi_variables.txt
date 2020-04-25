@@ -1,0 +1,163 @@
+libcode	unit	type	level	englishlib	frenchlib
+alext	cmol/kg	soil	NA	extractable aluminum	Aluminium extractible
+baer	%	plant	plant	Percentage of bagasse in aboveground biomass	Pourcentage bagasse dans biomasse aérienne
+bdens	gr/cm3	soil	NA	bulk density	Densité apparente
+brixaer	%	plant	plant	Brix aboveground biomass	Brix biomasse aérienne
+brixjaer	%	plant	plant	"aboveground biomass juice brix
+aboveground biomass juice brix"	Brix jus biomasse aérienne
+brixjt	%	plant	stem	Brix juice corrected stem lab	Brix jus corrigée tige labo
+brixm1	%	plant	stem	Brix juice manual average 1 low	Brix jus manuel moyen 1 bas
+brixm2	%	plant	stem	Brix juice manual average 2	Brix jus manuel moyen 2
+brixm3	%	plant	stem	Brix juice manual average 3	Brix jus manuel moyen 3
+brixm4	%	plant	stem	Brix juice manual average 4	Brix jus manuel moyen 4
+brixm5	%	plant	stem	Brix juice manual average top 5	Brix jus manuel moyen 5 haut
+btig	%	plant	stem	Percentage of bagasse in the stem	Pourcentage de bagasse dans la tige
+caech	cmol/kg	soil	NA	Exchangeable calcium	Calcium échangeable
+calb	%	plant	limb	Leaf blades calcium	Calcium limbes
+cec	cmol/kg	soil	NA	Cation exchange capacity	capacité d'échange cationique
+cel.ndfae	NA	plant	plant	NA	fraction de cellulose dans la ndf de biomasse aerienne
+cel.ndftu	NA	plant	stem	NA	fraction de cellulose dans la ndf de tige usinable
+cendaer	%	plant	plant	Ash aboveground biomass (%FM)	Cendre biomasse aérienne (% MF)
+cendtig	%	plant	stem	Ash stem (%FM)	Cendre tige (% MF)
+clay	%	soil	NA	Clay	argile
+coarse	% (>2mm)	soil	NA	Coarses	particules grossières
+diab	cm	plant	stem	Bottom diameter of the stem	diamètre tige bas
+diah	cm	plant	stem	Top diameter of the stem	diamètre tige haut
+diam	cm	plant	stem	Medium diameter of the stem	diamètre tige median
+ei	0-1	plant	plant	Radiation interception efficiency from the whole canopy (0-1)	efficience d'interception ensemble couvert (0-1)
+epaiss	cm	soil	NA	"layer thickness
+layer thickness"	épaisseur couche
+eto	mm/day	weather	field	Daily ET0 Penman-Monteith	Evapotranspiration potentiel journalière (Penman-Monteith
+fibraer	%	plant	plant	Fiber aboveground biomass (%FM)	fibre biomasse aérienne (% MF)
+fibrt	%	plant	stem	Fiber cane stem lab press (%FM)	fibre tige canne  labo presse (%MF)
+fibrtb	%	plant	stem	Fiber cane stem lab berding (%FM)	fibre tige canne  labo berding (%MF)
+gateau	gr	plant	stem	Cake of cane stem lab	gateau tige canne labo
+grad	MJ/m2/day	weather	field	Global radiation	Rayonnement global
+hapex	cm	plant	stem	Height of the apex of the sugar stem sample	Hauteur de l'apex échantillon tiges de canne
+hcc	cm3/cm3	soil	NA	Water content at field capacity	Teneur en eau à  la capacité au champ
+hcel.ndfae	NA	plant	plant	NA	fraction de hemicellulose dans la ndf de biomasse aerienne
+hcel.ndftu	NA	plant	stem	NA	fraction de hemicellulose dans la ndf de tige usinable
+het	cm	plant	stem	Standard deviation of the tvd height	écart type hauteur tvd (profil hauteurs)
+hpf	cm3/cm3	soil	NA	Water content at the wilting point	Teneur en eau au point de flétrissement
+hsat	cm3/cm3	soil	NA	Water content at saturation	Teneur en eau à  saturation
+htet	cm	plant	stem	Top Visible Dewlap (tvd) height of the stem (height profile)	hauteur tvd tige cm (profil hauteurs)
+htm	cm	plant	stem	tvd average height (height profile)	hauteur tvd moyenne (profil hauteurs)
+htn	cm	plant	stem	tvd minimum height (height profile)	hauteur tvd mini (profil hauteurs)
+htvde	cm	plant	stem	tvd sample height stem	hauteur tvd échantillon tiges
+htvdi	cm	plant	stem	tvd height interpolated	hauteur tvd interpolée
+htvds	cm	plant	stem	height tvd tracking labeled stems	hauteur tvd suivi tiges étiquetées
+htvdx	cm	plant	stem	Maximum height tvd	hauteur tvd maxi (profil hauteurs)
+humaer	%	plant	plant	Humidity in aboveground biomass	humidité biomasse aérienne
+humtig	%	plant	stem	Humidity in stalk	humidite tige usinable
+husi	cm	plant	stem	Stalk height in the stem sample 	hauteur tige usinable  échantillon tiges
+hvsoil	0-1	soil	NA	volumetric water	humidite volumique couche 1 (0-1)
+kech	cmol/kg	soil	NA	exchangeable potassium	Potassium échangeable
+klb	%	plant	limb	potassium leaf blades	potassium limbes
+ksat	cm/h	soil	NA	saturated hydraulic conductivity	Conductivité hydraulique à  saturation
+lai	m2/m2	plant	plant	Leaf Area Index	Indice foliaire (limbes verts totaux)
+lign.ndfae	NA	plant	plant	NA	fraction de lignine dans la ndf de biomasse aerienne
+lign.ndftu	NA	plant	stem	NA	fraction de lignine dans la ndf de tige usinable
+ltvdlarge	cm	plant	limb	width leaf blade tvd	largeur limbe tvd
+ltvdlargi	cm	plant	limb	width leaf blade tvd interpolated	largeur limbe tvd interpolée
+ltvdlargs	cm	plant	limb	width leaf blade tvd tracking labeled stems	largeur limbe tvd suivi tiges étiquetées
+ltvdlonge	cm	plant	limb	leaf blade length tvd	longueur limbe tvd
+ltvdlongi	cm	plant	limb	leaf blade length tvd interpolated	longueur limbe tvd interpolée
+ltvdlongs	cm	plant	limb	leaf blade length tvd tracking labeled stems	longueur limbe tvd suivi tiges étiquetées
+ltvdsurfe	cm2	plant	limb	leaf blade area tvd	surface limbe tvd
+ltvdsurfi	cm2	plant	limb	leaf blade area tvd interpolated	surface limbe tvd interpole
+ltvdsurfs	cm2	plant	limb	leaf blade area tvd tracking labeled stems	surface limbe tvd suivi tiges étiquetées
+mfa	T/ha	plant	plant	Aboveground fresh matter	matière fraaîche aérienne
+mffm	T/ha	plant	leaf	fresh matter of dead leaves	matière fraaîche feuilles mortes
+mflv	T/ha	plant	limb	fresh matter of green leaf blades	matière fraaîche limbes verts
+mflvpp	gr	plant	limb	fresh matter of green leaf blades per plant	matière fraaîche des limbes verts par plante
+mfre	T/ha	plant	plant	fresh matter remaining (whole plant - stalk)	matière fraaîche reste (plante - tige)
+mftu	T/ha	plant	stem	fresh matter of stalks	matière fraaîche tige usinable
+mftupp	gr	plant	stem	fresh matter of stalks per plant	matière fraaîche des tiges usinables par plante
+mgech	cmol/kg	soil	NA	exchangeable magnesium	Magnésium échangeable
+mglb	%	plant	limb	leaf blades magnesium	magnesium limbes
+mortdet	o	plant	stem	dead stem (0) or alive (1) (height profile)	tige morte 0, vivante 1 (profil hauteurs)
+msa	T/ha	plant	plant	aboveground dry matter	matière sèche aérienne
+msapp	gr	plant	plant	aboveground dry matter per plant	matière sèches aérienne par plante
+msasen	T/ha	plant	plant	dead aboveground dry matter (straw, leaves, stems)	matière sèche aérienne morte (paille, feuilles,tiges)
+msfm	T/ha	plant	leaf	dry matter of dead leaves	matière sèche feuilles mortes
+mslt	T/ha	plant	limb	dry matter of total leaf blades	matière sèche limbes totaux
+mslv	T/ha	plant	limb	dry matter of green leaf blades	matière sèche limbes verts
+mslvpp	gr	plant	limb	dry matter of green leaf blades per plant	matière sèche des limbes verts par plante
+msre	T/ha	plant	plant	dry matter remaining (not stalk)	matière sèche reste (non tige)
+msrespp	gr	plant	plant	dry matter remaining (not stalk) per plant	matière sèche reste par plante (non tige)
+mssucrtu	T/ha	plant	stem	sugar solid in stem	matiere seche de sucre dans tige
+mstu	T/ha	plant	stem	Stalk dry matter	matière sèche tige usinable
+mstupp	gr	plant	stem	Stalk dry matter per plant	matière sèche des tiges usinables par plante
+naech	cmol/kg	soil	NA	exchangeable sodium	Sodium echangeable
+naer	nb	plant	limb	number of leaf blades or aboveground internodes included tvd	nbre limbes ou entre-noeuds aériens TVD inclus
+nbdi	NA	plant	stem	number of damaged internodes	nombre d'entre-noeuds attaqués
+nblh	nb	plant	limb	number of leaf blades above tvd	nombre limbes au dessus tvd
+nblm	nb	plant	limb	number of dead leaf blades	nombre limbes morts
+nblss	nb	plant	limb	number of top leaf blades tracking labeled stems	nombre limbes supèrieurs (tvd exclus) suivi tiges étiquetées
+nblti	nb	plant	limb	total number of leaf blades included tvd	nombre limbes totaux tvd inclus interpolé
+nblts	nb	plant	limb	total number of leaf blades tracking labeled stems	nombre limbes totaux tvd inclus (sans fouet) suivi tiges étiquetées
+nblv	nb	plant	limb	number of green leaf blades	nombre limbes verts
+nblvdet	nb	plant	limb	number of green leaf blades included tvd	nombre de limbes verts sous tvd compris (profil hauteurs)
+nblvi	nb	plant	limb	number of bottom leaf blades included tvd	nombre limbes verts inferieurs tvd inclus interpolé
+nblvs	nb	plant	limb	number of bottom leaf blades included tvd tracking labeled stems	nombre limbes verts inferieurs tvd inclus suivi tiges étiquetées
+nblvsh	nb	plant	limb	number of medium green leaf blades	nombre de limbes verts moyen profil hauteurs
+nbt	nb/m2	plant	stem	number of stems (height profile)	nombre de tiges (profil hauteurs)
+nbtfl	%	plant	stem	percentage of flowering stems	Pourcentage de tiges fleuries
+nbtigv	nb/m2	plant	stem	number of live stems harvested per m2	nbre tiges vivantes recoltees par m2
+nbtm	nb/m2	plant	stem	number of dead stems per m2	nombre tiges mortes par m2
+nbtv	nb/m2	plant	stem	number of live stems per m2	nombre tiges vivantes par m2
+nbtvi	nb/m2	plant	stem	number of live stems per m2 (interpolated)	nombre tiges vivantes par m2 interpole
+ndfae	NA	plant	plant	NA	fraction de ndf dans la MS de biomasse aerienne
+ndftu	NA	plant	stem	NA	fraction de ndf dans la MS de tige usinable
+nentu	nb tig	plant	limb	number of internodes of the stalk	nombre entrenoeuds tige usinable
+nh4	g/cm3	soil	NA	NH4+ content 	teneur en NH4+
+nlb	%	plant	limb	nitrogne content of leaf blades	azote limbes
+no3	g/cm3	soil	NA	NO3- content	teneur en NO3-
+notdet	sans	plant	stem	"stem identification (height profile)
+height (height profile)"	numero tige (profil hauteurs)
+noteffg	NA	plant	plot	overall efficiency notation	notation efficacté globale
+noteffs	NA	plant	plot	specific efficiency notation of a species	notation efficacité spécifique à  une espèce
+notenhg	NA	plant	plot	overall weed notation	notation enherbement globale
+notenhs	NA	plant	plot	weed notation associated with a species	notation enherbement associée à  une espèce
+notesel	NA	plant	plot	notation sugarcane selectivity	notation de sélectivité de la canne à  sucre
+nttrec	nb/m2	plant	stem	"total number of stems harvested per m2
+Total number of stems harvested per m2"	nombre total de tiges récoltées par m2
+nturec	nb/m2	plant	stem	total number of stalks harvested per m2	nbre tiges usinables récoltées par m2
+pcihaer	j/Kg	plant	plant	Lower heating valule of fresh aboveground biomass	Pouvoir calorifique inférieur humide Biomasse aérienne
+plb	%	plant	limb	phosphorus content of leaf blades	phosphore limbes
+poljc	%	plant	stem	pol corrected juice lab (stem)	pol jus corrige labo (tige)
+pollu	%	plant	stem	pol juice read at lab before correction (stem)	Pol jus lu au labo avant correction (tige)
+purjaer	%	plant	plant	purity juice of overground biomass	pureté jus biomasse aérienne
+purjt	%	plant	stem	purity juice of the stem	pureté jus tige
+rainfall	mm/day	weather	field	Daily precipitation	Precipitations journalières
+rapportCN	NA	plant	plant	C/N	rapport C/N
+rec	%	plant	NA	recovery rate of the plant above ground	taux de recouvrement de la plante par rapport au sol
+rhmax	%	weather	field	Maximum daily relative humidity	Humidité relative maximum journalière
+rhmin	%	weather	field	Minimum daily relative humidity	Humidité relative minimum journalière
+rhmoy	%	weather	field	Average daily relative humidity	Humidité relative moyenne journalière
+sand	%	soil	NA	sand	sable
+sh00	cm/m2	plant	stem	sum heights tvd live stems (height profile)	Somme hauteurs tvd tiges vivantes (profil hauteurs)
+sh20	cm/m2	plant	stem	sum heights tvd alive stems (>20cm)  (height profile)	Somme hauteurs tvd tiges vivantes (>20cm) (profil hauteurs)
+sh30	cm/m2	plant	stem	sum heights tvd alive stems (>30cm) (height profile)	Somme hauteurs tvd tiges vivantes (>30cm) (profil hauteurs)
+sh40	cm/m2	plant	stem	sum heights tvd alive stems (>40cm) (height profile)	Somme hauteurs tvd tiges vivantes (>40cm) (profil hauteurs)
+sh50	cm/m2	plant	stem	sum heights tvd alive stems (>50cm) (height profile)	Somme hauteurs tvd tiges vivantes (>50cm) (profil hauteurs)
+sh60	cm/m2	plant	stem	sum heights tvd alive stems (>60cm) (height profile)	Somme hauteurs tvd tiges vivantes (>60cm) (profil hauteurs)
+sh70	cm/m2	plant	stem	sum heights tvd alive stems (>70cm) (height profile)	Somme hauteurs tvd tiges vivantes (>70cm) (profil hauteurs)
+sh80	cm/m2	plant	stem	sum heights tvd alive stems (>80 cm) (height profile)	Somme hauteurs tvd tiges vivantes (>80cm) (profil hauteurs)
+shapex	m/m2	plant	stem	Sum of apex heights  (height)	Somme hauteurs apex  (profil hauteurs)
+shtvd	m/m2	plant	stem	Sum of tvd heights (height profile)	Somme hauteurs tvd   (profil hauteurs)
+shusi	m/m2	plant	stem	Sum of stalks heights (height profile)	Somme hauteurs tiges usinables (profil hauteurs)
+silt	%	soil	field	silt	limon
+sla	cm2/gr	plant	limb	Specific Leaf Area	surface foliaire spécifique
+som	%	soil	field	organic content	teneur en matière organique
+spad	NA	plant	limb	spad	spad
+sucraer	%	plant	plant	"percentage of sugar in the  aboveground fresh biomass"	Sucre % MF Biomasse aérienne
+sucrt	%	plant	stem	percentage of sugar in the stem fresh biomass (laboratory)	sucre % (richesse) MF tige canne labo
+sucrtb	%	plant	stem	percentage of sugar in the stem fresh biomass (berding)	sucre % (richesse) MF tige canne berding labo
+surftot	cm2	plant	limb	total area of the green leaf blades per stem	surface totale limbes verts par tige
+swc	cm3/cm3	soil	field	soil water content	teneur en eau du sol
+tmax	°C	weather	field	Maximum daily air temperature	Température maximum journalière
+tmin	°C	weather	field	Minimum daily air temperature	Température minimum journalière
+tmoy	°C	weather	field	Average daily temperature	Température moyenne journalière
+windmax	km/days	weather	field	Maximum wind speed during the day	Vitesse du vent maximale journalière
+windtot	km/days	weather	field	Daily wind speed	Vitesse du vent journalière

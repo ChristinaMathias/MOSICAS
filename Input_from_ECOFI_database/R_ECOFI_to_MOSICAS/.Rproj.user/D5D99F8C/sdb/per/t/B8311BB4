@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "## Récupération des données sites par sites, exemple d'utilisation\n\n######################\n### code du pays\nMATCOUNT <- read.csv2(file = 'DATA/ECOFI_DATAVERSE/ecofi_country.csv',header=T)\nIDC <- MATCOUNT$countrycode[which(MATCOUNT$country=='REUNION')]\nIDC <- as.vector(IDC)\n\n######################\n### liste des sites\nMATSITE <- read.csv2(file ='DATA/ECOFI_DATAVERSE/ecofi_site.csv',header=T)\nhead(MATSITE)\nMATSITEIDC <- MATSITE[which(MATSITE$countrycode==IDC),]\nhead(MATSITEIDC)\n\n######################\n### liste des essais\nMATTRIAL <- read.csv2(file = 'DATA/ECOFI_DATAVERSE/ecofi_trial.csv',header = T,sep =\";\")\nMATTRIAL <- MATTRIAL[,!colnames(MATTRIAL)=='commentary']\nhead(MATTRIAL)\n\n######################\n#### on isole une variété particulière\n######################\nMATPLOTTREAT <- read.csv2(file = 'DATA/ECOFI_DATAVERSE/ecofi_plot.csv',header = T,sep =\";\")\nhead(MATPLOTTREAT)\nPLOTCODE <- as.vector(MATPLOTTREAT$plotcode)\nMATPLOTCYCLE <- read.csv2(file = 'DATA/ECOFI_DATAVERSE/ecofi_plotcycle.csv',header = T,sep =\";\")\nhead(MATPLOTCYCLE)\nMATPLOTCYCLE <- MATPLOTCYCLE[which(MATPLOTCYCLE$plotcode %in% PLOTCODE),]\nPLOTCODECYCLE <- as.vector(MATPLOTCYCLE$plotcyclecode)\n\nMATVARCYCLE <- read.csv2(file='DATA/ECOFI_DATAVERSE/ecofi_varcycle.csv',header=T,sep=';')\nhead(MATVARCYCLE)\nMATVARCYCLE <- MATVARCYCLE[which(MATVARCYCLE$varcyclecode %in% PLOTCODECYCLE),]\n# variety selection ?\nVAR <- 'R570'\nMATVARCYCLE <- MATVARCYCLE[which(MATVARCYCLE$varcode %in% VAR),]\n\nhead(MATVARCYCLE)\n\n\n\n\n###########################################\n#### Création input trait\nsource('SCRIPT/R_function_stics_input.R')\n\nINPUTUSMS(MATVARCYCLE$varcyclecode,SETOUT='DATA/STICS_MAILING_INPUT/',IDCODE='ALL_R570')\nINPUTINI(IDCODE='ALL_R570')\nINPUTSOIL(IDCODE='ALL_R570')\n#INPUTTEC( IDCODE='ALL_R570')\n#INPUTTECV10( IDCODE='ALL_R570')\nINPUTTECIRRIGV10( IDCODE='ALL_R570')\nINPUTSTA(IDCODE='ALL_R570')\nINPUTWEATHER(IDCODE='ALL_R570')\nINPUTOBS(IDCODE='ALL_R570')\n\n#INPUTTRAITMOS(MATVARCYCLE$varcyclecode,SETOUT='DATA/MOSICAS_INPUT/',IDCODE='ALL_R585')\n#INPUTWSMOS(MATVARCYCLE$varcyclecode,SETOUT='DATA/MOSICAS_INPUT/',IDCODE='ALL_R585')\n#INPUTOBSMOS(MATVARCYCLE$varcyclecode,SETOUT='DATA/MOSICAS_INPUT/',IDCODE='ALL_R585')\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+    "created" : 1550236549201.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "812159823",
+    "id" : "B8311BB4",
+    "lastKnownWriteTime" : 1565962336,
+    "last_content_update" : 1565962336284,
+    "path" : "~/Recherche/Cirad/SD_Ecofy_base_donnees/R_base_donne/SCRIPT/R_récup_donnees_to_mailing_STICS.R",
+    "project_path" : "SCRIPT/R_récup_donnees_to_mailing_STICS.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

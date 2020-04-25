@@ -1,0 +1,6 @@
+1
+glai 100
+3
+laicroi 0.00415 95 1
+laiwksen 0.0187 95 1
+sthydcroi 1 95 1

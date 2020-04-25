@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1587806351534.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3323730051",
+    "id" : "9A044B59",
+    "lastKnownWriteTime" : 1587809813,
+    "last_content_update" : 1587809813076,
+    "path" : "C:/Users/mathi/OneDrive/Articles/MOSICAS/dataset/GITHUB/RUN_MOSICAS/R_run_MOSICAS/SCRIPT/R_Run_calibration_Mosicas.R",
+    "project_path" : "SCRIPT/R_Run_calibration_Mosicas.R",
+    "properties" : {
+        "cursorPosition" : "5,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

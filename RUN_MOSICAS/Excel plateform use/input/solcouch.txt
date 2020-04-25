@@ -1,0 +1,7 @@
+soilcode	layernum	thickness	swcwp	swcfc	swcsat	bdens
+CTC04	1	5	0.14	0.26	0.39	1
+CTC04	2	15	0.14	0.26	0.39	1
+CTC04	3	20	0.19	0.27	0.39	1
+CTC04	4	20	0.18	0.27	0.4	1
+CTC04	5	20	0.14	0.26	0.54	1
+CTC04	6	20	0.14	0.26	0.54	1

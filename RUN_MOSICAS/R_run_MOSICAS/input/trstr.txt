@@ -1,0 +1,1 @@
+nbbgi	treatcode	cycle	varcode	rowspace	begdate	enddate	trialat	trialong	trialalt	soilcode	inisoilvol	rootdepth	irricode	wstacode

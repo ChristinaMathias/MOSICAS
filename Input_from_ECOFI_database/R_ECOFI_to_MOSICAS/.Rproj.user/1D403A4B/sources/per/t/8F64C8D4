@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1587732332949.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1850322703",
+    "id" : "8F64C8D4",
+    "lastKnownWriteTime" : 1587801011,
+    "last_content_update" : 1587801011634,
+    "path" : "C:/Users/mathi/OneDrive/Articles/MOSICAS/dataset/GITHUB/Input_from_ECOFI_database/MOSICAS/R_ECOFI_to_MOSICAS/SCRIPT/R_récup_donnees_Etude_variabilite.R",
+    "project_path" : "SCRIPT/R_récup_donnees_Etude_variabilite.R",
+    "properties" : {
+        "cursorPosition" : "6,35",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

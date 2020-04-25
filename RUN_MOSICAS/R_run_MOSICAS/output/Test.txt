@@ -1,0 +1,27 @@
+ RAPPORT DE SIMULATION
+ version:    VERSION mosicas-2017.05.29 (J.F. MARTINE)         
+ fichier           Test
+ irotation:             1
+ bilanh:     MOSICASCERESb       
+  fréquence:       200000
+ iobs:                  0
+ iwatbal:               1
+ typeparam:             2
+ typecalage:            3
+ forcage 1:             0
+ forcage 2:             0
+ irrigation:            1
+ solcouch.txt lu
+ Calcul stocks
+ irrigations           53
+ Fertilisations N            0
+ observ. sol :            0
+ Lecture plante.txt effectuee
+ nage=         334         699
+ solcouch.txt lu
+ Calcul stocks
+ irrigations            0
+ Fertilisations N            0
+ observ. sol :            0
+ Lecture plante.txt effectuee
+ nage=         334         699

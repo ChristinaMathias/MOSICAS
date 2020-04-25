@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "#library(\"STICSmailing\")\n#library(\"STICSmailing\", lib.loc=\"~/R/win-library/3.5\")\n#install.packages(\"SCRIPT/STICSmailing_0.3.30.tar.gz\", repos = NULL)\nlibrary(STICSmailing)\n\n# set input_dir and output dir paths\ninput_dir = \"DATA/STICS_MAILING_INPUT/\"\nexcel_file = \"Inputs_STICS_mailing_R570_IRRIG.xlsx\"\noutput_dir = \"DATA/STICS_USMs/\"\n\n\nSTICS_mailing_Ini(stwF = input_dir,\n                  Excel_file = excel_file,\n                  sheetIndex = \"Ini\",\n                  stwR = output_dir)\n\nSTICS_mailing_Obs(stwF = input_dir,\n                  Excel_file = excel_file,\n                  sheetIndex = \"Obs\",\n                  stwR = output_dir)\n\nSTICS_mailing_Sols(stwF = input_dir,\n                   Excel_file = excel_file,\n                   sheetIndex = \"Soils\",\n                   stwR = output_dir)\n\nSTICS_mailing_Sta(stwF = input_dir,\n                  Excel_file = excel_file,\n                  sheetIndex = \"Station\",\n                  stwR = output_dir)\n\nSTICS_mailing_Tec(stwF = input_dir,\n                  Excel_file = excel_file,\n                  sheetIndex = \"Tec\",\n                  stwR = output_dir)\n\nSTICS_mailing_USMs(stwF = input_dir,\n                   Excel_file = excel_file,\n                   sheetIndex = \"USMs\",\n                   stwR = output_dir)\n\nSTICS_mailing_Weather(stwF = input_dir,\n                      Excel_file = excel_file,\n                      sheetIndex_USMs = \"USMs\",\n                      sheetIndex_Weather = \"Weather\",\n                      stwR = output_dir)\n\n\n",
+    "created" : 1558471037443.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1019341849",
+    "id" : "B9B87E8F",
+    "lastKnownWriteTime" : 1565963196,
+    "last_content_update" : 1565963196260,
+    "path" : "~/Recherche/Cirad/SD_Ecofy_base_donnees/R_base_donne/SCRIPT/STICS_mailing_Ex.R",
+    "project_path" : "SCRIPT/STICS_mailing_Ex.R",
+    "properties" : {
+    },
+    "relative_order" : 10,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
