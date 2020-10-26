@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1597738835577.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "DDE5F398",
+    "lastKnownWriteTime" : 7308604914264011873,
+    "last_content_update" : 1597738835577,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "FC3E25B1",
+        "caption" : "MATTEMP",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=MATTEMP&cache_key=FC3E25B1",
+        "displayedObservations" : 11017,
+        "environment" : "",
+        "object" : "MATTEMP",
+        "preview" : 0,
+        "totalObservations" : 11017,
+        "variables" : 13
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

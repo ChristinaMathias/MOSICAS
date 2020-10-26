@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "## Create MOSICAS input file from all trials with a comon variety in ECOFI\n\n###############\n## List of all trials with choosen cultivar, ex R570\n#VAR <- c(\"R570\")\nMATVARCYCLE <- read.table(file='DATA/SAUV_ECOFY/ecofi_varcycle.txt',header=T)\n#MATVARCYCLE <- MATVARCYCLE[which(MATVARCYCLE$varcode %in% VAR),]\nhead(MATVARCYCLE)\nLISTVARCYCLE <- MATVARCYCLE$varcyclecode\n\n###########################################\n#### Création input trait\nsource('SCRIPT/R_function_mosicas_input.R')\n\n# trait input file\nINPUTTRAITMOS(TREATCODE=LISTVARCYCLE,SETOUT='DATA/MOSICAS_INPUT/',IDCODE='')\n# weather station and data input files\nINPUTWSMOS(TREATCODE=LISTVARCYCLE,SETOUT='DATA/MOSICAS_INPUT/',IDCODE='')\n# irrigation input files\nINPUTIRRIGMOS(TREATCODE=LISTVARCYCLE,SETOUT='DATA/MOSICAS_INPUT/',IDCODE='')\n# Soil inputs files\nINPUTSOILMOS(TREATCODE=LISTVARCYCLE,SETOUT='DATA/MOSICAS_INPUT/',IDCODE='')\n# plant and soil observation inputs files\nINPUTOBSMOS(TREATCODE=LISTVARCYCLE,SETOUT='DATA/MOSICAS_INPUT/',IDCODE='')\n\n\n\n\n",
+    "created" : 1597312031345.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1088391850",
+    "id" : "841FCA25",
+    "lastKnownWriteTime" : 1597692966,
+    "last_content_update" : 1597692966,
+    "path" : "~/OneDrive/R_projets/R_Mosicas/Input_from_ECOFI_database/R_ECOFI_to_MOSICASR/SCRIPT/R_trial_selection_input_creation.R",
+    "project_path" : "SCRIPT/R_trial_selection_input_creation.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

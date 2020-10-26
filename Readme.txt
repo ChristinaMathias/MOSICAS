@@ -1,4 +1,4 @@
-MOSICAS folder :
+MOSICAS-Fortran folder :
   - Code: Fortran code of the MOSICAS model
   - Documentation: documentation describing the input ans output files
   - RUN_MOSICAS:
@@ -11,3 +11,5 @@ ChristinaMathias. (2020, April 25). ChristinaMathias/MOSICAS: First realease (Ve
 
 When using the Ecofi database, please cite the datapaper: 
 ECOFI: a database of sugar and energy cane field trials. Christina Mathias, Chaput Maxime, Martiné Jean-François, Auzoux Sandrine. 2020. Open Data Journal for Agricultural Research, 6 : 14-18.
+
+Two versions of MOSICAS in R and html are currently under development (MOSICAS-R and MOSIWEB, respectively)

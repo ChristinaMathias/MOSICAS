@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1597687336270.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1088391850",
+    "id" : "278C71CF",
+    "lastKnownWriteTime" : 1597692966,
+    "last_content_update" : 1597692966829,
+    "path" : "C:/Users/mathi/OneDrive/R_projets/R_Mosicas/Input_from_ECOFI_database/R_ECOFI_to_MOSICASR/SCRIPT/R_trial_selection_input_creation.R",
+    "project_path" : "SCRIPT/R_trial_selection_input_creation.R",
+    "properties" : {
+        "cursorPosition" : "28,0",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
