@@ -35,7 +35,7 @@ Binf <- Valpar*0.95
 bounds <- apply(cbind(Binf, Bsup), 1, function(x){list(min = x[1], max = x[2])})
 
 # name of the output
-ID_SENS = 'All_test2'
+ID_SENS = 'SENSI_PLU_R570_SYP'
 
 ###################################################
 ######### sampling design #########################
@@ -98,85 +98,60 @@ save.image(paste(setOutput,'/SENS_Mosicas_',Method,'_',ID_SENS,sep=''))
 ########## sensitivity 
 
 ##### Variance based methods ######################
+ ### exemple
 
 Method='Variance'
 load(paste(setOutput,'/SENS_Mosicas_',Method,'_',ID_SENS,sep=''))
 
-Varout=c('spari','agrfm','stamfm','stamsu')
-MATIS <- list() ; CV <-c()
+Varout=c('spari','agrfm','stemfm','stemsu')
+PARSI <- colnames(SAFAST$X)
+SIP <- list()
+SIT <- list()
 
 for(j in 1:length(Varout)){
 
-  YSIM <- y[,Varout[j]]
-  CV <- c(CV,sd(YSIM)/mean(YSIM))
-  hist(YSIM)
-  XPAR <- sa$X
-
-  EXP <- paste('YSIM~(',Parname[1],sep='')
-  for (i in 2:Nbpar){
-    if(i<Nbpar){EXP <- paste(EXP,'+',Parname[i],sep='')}
-    if(i==Nbpar){EXP <- paste(EXP,'+',Parname[i],')^2',sep='')}
-  }
-
-  fit <- lm(EXP,data=XPAR)
-#  require(car)
- # ana <- Anova(fit,type='II')
-  ana <- anova(fit)
-
-  SUMSQ <- ana$`Sum Sq`
-  FACT <- row.names(ana)
-
-  ### principal sensitivity index
-  ISP <- c(SUMSQ[1:31]/sum(SUMSQ),SUMSQ[length(SUMSQ)]/sum(SUMSQ))
-  FACTIS <- c(Parname,'Residuals')
-
-  ### total sensitivity index
-  IST <- sapply(1:length(Parname), function(i) sum(SUMSQ[grep(Parname[i],FACT)])/sum(SUMSQ))
-  IST <- c(IST,ISP[length(ISP)])
-
-  MATIS[[j]] <- matrix(c(ISP,IST-ISP),nrow=2,byrow=T)
+  SAFAST <- sa
+  SAFAST$y <- y[,Varout[j]]
+  tell(SAFAST)
+  SIP[[j]] <- (SAFAST$D1/SAFAST$V)
+  SIT[[j]] <- 1-SAFAST$Dt/SAFAST$V
+  MATIS[[j]] <- rbind(SIT[[j]],SIT[[j]]-SIP[[j]])
 
 }
 
 #x11()
+PARSI[ORDER]
+
+ORDER <- rev(c(31,32,9,10,10,12,8,14,26,27,28,13,
+           15,16,17,23,24,25,19,20,21,22,1:6,
+           7,18,29,30, 33,34,35,36))
 
 par(mfrow=c(1,4),oma=c(4,6,1,1),mar=c(0,1,0,0))
-barplot(MATIS[[1]]*100,names.arg = FACTIS,las=2,horiz=T,mgp=c(2,0.5,0),col=gray(c(0.8,0.1)),
-        border=NA,xlim=c(0,50),width=1,space=0.5,ylim=c(1,47),tck=-0.02)
-axis(2,at=(1:length(FACTIS))*1.5-0.5=rep('',length(FACTIS)),tck=-0.02)
-box();text(25,47,labels=expression(Sigma~'iPAR'),cex=1.2)
-barplot(MATIS[[2]]*100,names.arg = rep('',length(FACTIS)),las=2,horiz=T,xlim=c(0,80),
-        col=gray(c(0.8,0.1)),border=NA,width=1,space=0.5,ylim=c(1,47),mgp=c(2,0.5,0),tck=-0.02)
-axis(2,at=(1:length(FACTIS))*1.5-0.5,labels=rep('',length(FACTIS)),tck=-0.02)
-box();text(40,47,labels=expression(ABV[FM]),cex=1.2)
-barplot(MATIS[[3]]*100,names.arg = rep('',length(FACTIS)),las=2,horiz=T,xlim=c(0,30),
-        col=gray(c(0.8,0.1)),border=NA,width=1,space=0.5,ylim=c(1,47),mgp=c(2,0.5,0),tck=-0.02)
-axis(2,at=(1:length(FACTIS))*1.5-0.5,labels=rep('',length(FACTIS)),tck=-0.02)
-box();text(15,47,labels=expression(Sta[FM]),cex=1.2)
-barplot(MATIS[[4]]*100,names.arg = rep('',length(FACTIS)),las=2,horiz=T,xlim=c(0,30),
-        col=gray(c(0.8,0.1)),border=NA,width=1,space=0.5,ylim=c(1,47),mgp=c(2,0.5,0),tck=-0.02)
-axis(2,at=(1:length(FACTIS))*1.5-0.5,labels=rep('',length(FACTIS)),tck=-0.02)
-box();text(15,47,labels=expression(Sug[DM]),cex=1.2)
-mtext('% variance explained',side = 1,line = 2.5,cex=1.2,outer=T)
+barplot(MATIS[[1]][,ORDER],names.arg = PARSI[ORDER],las=2,horiz=T,mgp=c(2,0.5,0),col=gray(c(0.8,0.1)),
+        border=NA,xlim=c(0,0.5),width=1,space=0.5,ylim=c(1,53),tck=-0.02)
+axis(2,at=(1:length(PARSI))*1.5-0.5,labels=rep('',length(PARSI)),tck=-0.02)
+box();text(0.25,53,labels=expression(Sigma~'iPAR'),cex=1.2)
+abline(h=1.5*c(3,7,13,17,23,27,29,33)+1+0.5+0.25,lty=2)
 
+barplot(MATIS[[2]][,ORDER],names.arg = rep('',length(PARSI)),las=2,horiz=T,mgp=c(2,0.5,0),col=gray(c(0.8,0.1)),
+        border=NA,xlim=c(0,0.7),width=1,space=0.5,ylim=c(1,53),tck=-0.02)
+axis(2,at=(1:length(PARSI))*1.5-0.5,labels=rep('',length(PARSI)),tck=-0.02)
+box();text(0.35,53,labels=expression(ABV[FM]),cex=1.2)
+abline(h=1.5*c(3,7,13,17,23,27,29,33)+1+0.5+0.25,lty=2)
 
+barplot(MATIS[[3]][,ORDER],names.arg = rep('',length(PARSI)),las=2,horiz=T,mgp=c(2,0.5,0),col=gray(c(0.8,0.1)),
+        border=NA,xlim=c(0,0.4),width=1,space=0.5,ylim=c(1,53),tck=-0.02)
+axis(2,at=(1:length(PARSI))*1.5-0.5,labels=rep('',length(PARSI)),tck=-0.02)
+box();text(0.2,53,labels=expression(Sta[FM]),cex=1.2)
+abline(h=1.5*c(3,7,13,17,23,27,29,33)+1+0.5+0.25,lty=2)
 
+barplot(MATIS[[4]][,ORDER],names.arg = rep('',length(PARSI)),las=2,horiz=T,mgp=c(2,0.5,0),col=gray(c(0.8,0.1)),
+        border=NA,xlim=c(0,0.4),width=1,space=0.5,ylim=c(1,53),tck=-0.02)
+axis(2,at=(1:length(PARSI))*1.5-0.5,labels=rep('',length(PARSI)),tck=-0.02)
+box();text(0.2,53,labels=expression(Sug[DM]),cex=1.2)
+abline(h=1.5*c(3,7,13,17,23,27,29,33)+1+0.5+0.25,lty=2)
+mtext('Fast99 Sensitivity Index',side = 1,outer=T,cex=1.2,line=3)
 
-barplot(IST)
-barplot(ISP,add=T,col='black')
-
-barplot((SUMSQ/sum(SUMSQ))[1:62],names.arg = FACT[1:62],las=2)
-
-Varout='agrfm'
-
-tell(sa,y[,Varout])
-
-fit <- lm(sa$y~sa$X[,1]*sa$X[,2])
-aa<- anova(fit)
-aa$`Sum Sq`/sum(aa$`Sum Sq`)
-
-print(sa)
-plot(sa,las=3)
 
 
 # fast indice calculation
